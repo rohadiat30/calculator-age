@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- GOOGLE FONT = [POPPINS] -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <section id="age-calculator">
+
+    <main class="calculator">
+      <form id="form-inputs" class="flex">
+        <div class="form-control">
+          <label>day</label>
+          <input type="text" placeholder="DD" id="dayInput" inputmode="numeric">
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label>month</label>
+          <input type="text" placeholder="MM" id="monthInput" inputmode="numeric">
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label>year</label>
+          <input type="text" placeholder="YYYY" id="yearInput" inputmode="numeric">
+          <small></small>
+        </div>
+      </form>
+
+      <div id="render" class="stacked">
+        <div class="line"></div>
+        <button id="render-btn" onclick="ageCalculator()"><img src="assets/images/icon-arrow.svg" alt="arrow in purple circle" width="30px"></button>
+      </div>
+
+      <div id="calculator-output">
+        <div id="yearOutput" class="flex">
+          <h1 class="output">- -</h1>
+          <h1>years</h1>
+        </div>
+        <div id="monthOutput" class="flex">
+          <h1 class="output">- -</h1>
+          <h1>months</h1>
+        </div>
+        <div id="dayOutput" class="flex">
+          <h1 class="output">- -</h1>
+          <h1>days</h1>
+        </div>
+      </div>
+    </main>
+    
+  </section>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
